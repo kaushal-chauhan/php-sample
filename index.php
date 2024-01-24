@@ -75,10 +75,7 @@ if ($result->num_rows > 0) {
   echo "0 results";
 }
 
-
-echo"<br>";
-
-
+echo"<br><br>";
 
 $sql = "UPDATE category SET name='jjkkf' WHERE entity_id=2";
 
