@@ -29,7 +29,7 @@
         </div>
     </div>
 <?php } else { ?>
-    <?php
+    <!-- 
         $conn = new mysqli("localhost", "root", "", "sample");
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
@@ -41,7 +41,9 @@
         echo "Error: " . $sql . "<br>" . $conn->error;
         }
         $conn->close();
-    ?>
+    ?> -->
+
+    
 <?php } ?>
 
  <?php
@@ -69,6 +71,7 @@ if ($result->num_rows > 0) {
            </table>
 
 </div>
+
     <?php
   }
 } else {
@@ -89,8 +92,6 @@ if (mysqli_query($conn, $sql)) {
 $conn->close();
 
 ?>
-
-
 
 
 
